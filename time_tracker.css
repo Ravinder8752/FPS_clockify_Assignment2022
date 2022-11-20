@@ -93,14 +93,11 @@ body{
     text-transform: capitalize;
     margin: 15px;
     box-shadow: 2px 2px 4px rgb(207, 205, 205);
-    /* background-color: rgb(241, 240, 158); */
     background-color: white;
     font-size: 22px;
  }  
 
  .TimetrackerBodyInfo:hover{
-    /* transform: scale(1.06);
-    transition: all 0.5s ease; */
     background-color: lightcyan;
  }
 
@@ -151,11 +148,6 @@ body{
     font-size: 32px;
 }
 
-
-
-
-
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 1490px) {
     .TimetrackerHead{
         width: 90%;
@@ -183,9 +175,7 @@ body{
         font-size: 22px;
         width: 90%;
      }  
-
-
-
+  
      .TimetrackerBodyInfo > div{
         padding: 10px;
         margin: 10px 25px;
