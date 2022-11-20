@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams</title>
+    <link href= "teams.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="https://clockify.me/assets/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/249783f98b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="navi_gation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="productNavigation">
+        <div>
+            <i onclick="sidebarFeature()" class="fas fa-bars"></i>
+        </div>
+        <div>
+            <img src="https://clockify.me/assets/images/clockify-logo.svg" alt="logo">
+        </div>
+        <div class="productNavigationSpacer">
+
+        </div>
+        <div>
+            <span>Workspace</span>
+            <i class="fas fa-caret-down"></i>
+        </div>
+        <div>
+           <a href="up_grade.html"><button class="btn">upgrade</button></a>
+        </div>
+        <div>
+            <img src="https://clockify.me/assets/nav-icons/help.svg">
+        </div>
+        <div>
+            <img src="https://clockify.me/assets/nav-icons/notification.svg">
+        </div>
+        <div>
+            <!-- <img src="" alt="dp"> -->
+            <i class="fas fa-user"></i>
+        </div>
+        <!-- onclick="parent.location='index.jsp#home'">home</a> -->
+     </div>
+    <div class="productContainer">
+        <div id="productContainerSidebar" class="productContainerSidebar">
+            <div  onclick="parent.location='time_sheet.html'" title="Timesheet">
+                <img src="https://clockify.me/assets/nav-icons/timesheet.svg" alt="icon">
+                <span>Timesheet</span>
+            </div>  
+            <div onclick= "parent.location='time_tracker.html'" title="Time Tracker">
+                <img src="https://clockify.me/assets/nav-icons/time-tracker.svg" alt="icon">
+                <span>Timetracker</span>
+            </div>
+            <div  id="productAnalyze">
+                <p>Analyze</p>
+            </div>
+            <div onclick= "parent.location='dash_board.html'" title="Dashboard">
+                <img src="https://clockify.me/assets/nav-icons/dashboard.svg" alt="icon">
+                <span>Dashboard</span>
+            </div>
+            <div id="productManage">
+                <p>Manage</p>
+            </div>
+            <div onclick= "parent.location='teams.html'" title="Team">
+                <img src="https://clockify.me/assets/nav-icons/teams.svg" alt="icon">
+                <span>Team</span>
+            </div>
+            <div onclick= "parent.location='client.html'" title="Clients">
+                <img src="https://clockify.me/assets/nav-icons/clients.svg" alt="icon">
+                <span>Clients</span>
+            </div>
+            <div onclick= "parent.location='tags.html'" title="Tags">
+                <img src="https://clockify.me/assets/nav-icons/tags.svg" alt="icon">
+                <span>Tags</span>
+            </div>
+            <div onclick= "parent.location='settings.html'" title="Settings">
+                <img src="https://clockify.me/assets/nav-icons/settings.svg" alt="icon">
+                <span>Settings</span>
+            </div>
+        </div>
+        <div id="productContainerContent" class="productContainerContent">
+            <div class="mainBody">
+                <div class="innerBodyUpgrade">
+                    <p>PREMIUM features<button>Upgrade</button></p>
+                </div>
+
+                <div class="mainBodyHeading"><p>Team</p></div>
+                <div class="mainBodyOptions">
+                    <ul>
+                        <li> <a href="teams.html" style="text-decoration: none;"><button style="background-color: white; border-bottom: 0;" id="memberBtn">MEMBERS</button></a></li>
+                        <li><button id="groupBtn">GROUPS</button></li>
+                        <li><button id="reminderBtn">REMINDERS</button></li>
+                    </ul>
+                </div>
+
+                <fieldset disabled>
+
+                    <div class="mainBodySettings" id="mainBodySettings">
+                        <div class="settingsInnerBody">
+                            <div class="innerBodyFirstPart">
+                                <select name="options" class="groupProjectsOptions">
+                                    <option value="client">Show all</option>
+                                    <option value="department">Departments</option>
+                                    <option value="ategory">Category</option>
+                                    <option value="Custom...">Custom</option>
+                                </select>
+                                <input type="text" value="Search by name or email">
+                                <button>Add new member</button>
+                            </div>
+
+                            <div class="innerBodyTable">
+                                <table>
+                                    <tr style="background-color: #E4EAEE;">
+                                        <td colspan="5">Members</td>
+                                    </tr>
+                                    <tr class="row2">
+                                        <td>NAME <img src="https://i.postimg.cc/Qtjz8mtg/sort-arrows-couple-pointing-up-and-down.png"></td>
+                                        <td>EMAIL <img src="https://i.postimg.cc/Qtjz8mtg/sort-arrows-couple-pointing-up-and-down.png"></td>
+                                        <td>BILLABLE RATE (USD) <img src="https://i.postimg.cc/Qtjz8mtg/sort-arrows-couple-pointing-up-and-down.png"></td>
+                                        <td>Role</td>
+                                        <td>GROUP <img src="https://i.postimg.cc/Qtjz8mtg/sort-arrows-couple-pointing-up-and-down.png"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ravinder (you)</td>
+                                        <td>ravinder@gmail.com</td>
+                                        <td><input type="text" value=""></td>
+                                        <td><button>Owner</button></td>
+                                        <td><i class="fa fa-plus-circle" style="color: #03A9F4;"></i> Group</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="teams.js"></script>
+    <script src="navi_gation.js"></script>
+</body>
+
+</html>

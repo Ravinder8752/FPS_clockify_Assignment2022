@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clockify - 100% Free Time Tracking Software</title>
+    <link rel="icon" href="https://clockify.me/assets/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/249783f98b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="time_sheet.css">
+    <link rel="stylesheet" href="navi_gation.css">
+</head>
+<body>
+    <div class="productNavigation">
+        <div>
+            <i onclick="sidebarFeature()" class="fas fa-bars"></i>
+        </div>
+        <div>
+            <img src="https://clockify.me/assets/images/clockify-logo.svg" alt="logo">
+        </div>
+        <div class="productNavigationSpacer">
+
+        </div>
+        <div>
+           
+            <div class="dropdown">
+                <span class="dropbtn" id="workspacePassword">Workspace </span>
+                <div class="dropdown-content">
+                    <a href="#">Workspace</a>
+                    <a href="#" id="workspaceEmail"> </a>
+                </div>
+            </div>
+        </div>
+        <div>
+           <a href="up_grade.html"><button class="btn">upgrade</button></a>
+        </div>
+        <div>
+            <img src="https://clockify.me/assets/nav-icons/help.svg">
+        </div>
+        <div>
+            <img src="https://clockify.me/assets/nav-icons/notification.svg">
+        </div>
+        <div>
+            <!-- <img src="" alt="dp"> -->
+            <i class="fas fa-user"></i>
+            <div class="dropdown">
+                <span class="dropbtn">Profile </span>
+                <div class="dropdown-content">
+                    <a href="#" id="profilePassword"> </a>
+                    <a href="#" id="profileEmail"> </a>
+                    <a href="#"> Profile Setting</a>
+                    <a href="#"> Download</a>
+                    <a href="Sign_Up.html"> Logout </a>
+                </div>
+            </div>
+        </div>
+       
+     </div>
+    <div class="productContainer">
+        <div id="productContainerSidebar" class="productContainerSidebar">
+            <div  onclick="parent.location='time_sheet.html'" title="Timesheet">
+                <img src="https://clockify.me/assets/nav-icons/timesheet.svg" alt="icon">
+                <span>Timesheet</span>
+            </div>  
+            <div onclick= "parent.location='time_tracker.html'" title="Time Tracker">
+                <img src="https://clockify.me/assets/nav-icons/time-tracker.svg" alt="icon">
+                <span>Timetracker</span>
+            </div>
+            <div  id="productAnalyze">
+                <p>Analyze</p>
+            </div>
+            <div onclick= "parent.location='dash_board.html'" title="Dashboard">
+                <img src="https://clockify.me/assets/nav-icons/dashboard.svg" alt="icon">
+                <span>Dashboard</span>
+            </div>
+            <div id="productManage">
+                <p>Manage</p>
+            </div>
+            <div onclick= "parent.location='teams.html'" title="Team">
+                <img src="https://clockify.me/assets/nav-icons/teams.svg" alt="icon">
+                <span>Team</span>
+            </div>
+            <div onclick= "parent.location='client.html'" title="Clients">
+                <img src="https://clockify.me/assets/nav-icons/clients.svg" alt="icon">
+                <span>Clients</span>
+            </div>
+            <div onclick= "parent.location='tags.html'" title="Tags">
+                <img src="https://clockify.me/assets/nav-icons/tags.svg" alt="icon">
+                <span>Tags</span>
+            </div>
+            <div onclick= "parent.location='settings.html'" title="Settings">
+                <img src="https://clockify.me/assets/nav-icons/settings.svg" alt="icon">
+                <span>Settings</span>
+            </div>
+        </div>
+        <div id="productContainerContent" class="productContainerContent">
+
+         <div class="Timesheet">
+            <div class="TimesheetNavigation">
+                <h2>Timesheet</h2>
+            </div>
+            <div class="TimesheetTable">
+                <div class="TimesheetTableHead">
+                    <div class="TimesheetTableSpacer">
+                        <p>Projects</p>
+                        <input  class="TimesheetTableProject" id="project" placeholder="Project Name" type="text" required="required">
+                    </div>
+                    <div class="TimesheetTableDetails">
+                        <div>
+                            <p>Mon</p>
+                            <input id="mon" type="number">
+                        </div>
+                        <div> 
+                            <p>Tue</p>
+                            <input id="tue" type="number">
+                        </div>
+                        <div>
+                            <p>Wed</p>
+                            <input id="wed" type="number">
+                        </div>
+                        <div>
+                            <p>Thur</p>
+                            <input id="thu" type="number">
+                        </div>
+                        <div>
+                            <p>Fri</p>
+                            <input id="fri" type="number">
+                        </div>
+                        <div>
+                            <p>Sat</p>
+                            <input id="sat" type="number">
+                        </div>
+                        <div>
+                            <p>Sun</p>
+                            <input id="sun" type="number">
+                        </div>
+                        <div>
+                            <p>Total</p>
+                            <p id="total" style="visibility: hidden;">ad</p>
+                        </div>
+                        <div>
+                            <button id="addTimesheet">Add</button>
+
+                        </div>
+                    </div> 
+                </div>
+                <div id="TimesheetTableBody">
+
+                </div>
+                <div class="TimesheetTableTotal">
+                    <div class="TimesheetTableSpacer">
+                        <p>Total:</p>
+                    </div>
+                    <div class="TimesheetTableDetails" >
+                        <div>
+                            <p id="monTotal">0</p>
+                        </div>
+                        <div>
+                            <p id="tueTotal">0</p>
+                        </div>
+                        <div>
+                            <p id="wedTotal">0</p>
+                        </div>
+                        <div>
+                            <p id="thuTotal">0</p>
+                        </div>
+                        <div>
+                            <p id="friTotal">0</p>
+                        </div>
+                        <div>
+                            <p id="satTotal">0</p>
+                        </div>
+                        <div>
+                            <p id="sunTotal">0</p>
+                        </div>
+                        <div>
+                            <p id="sumTotal">0</p>
+                        </div>
+                        <div>
+                            <button onclick="clearAll()">Clear All</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ </div>
+
+
+
+
+     <script src="time_sheet.js"></script>
+     <script src = "navi_gation.js"></script>
+</body>
+</html>
+

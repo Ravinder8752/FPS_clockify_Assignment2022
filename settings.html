@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link href= "settings.css" rel="stylesheet">
+    <link rel="stylesheet" href="navi_gation.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="https://clockify.me/assets/images/favicon.ico">
+    <script src="https://kit.fontawesome.com/249783f98b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="productNavigation">
+        <div>
+            <i onclick="sidebarFeature()" class="fas fa-bars"></i>
+        </div>
+        <div>
+            <img src="https://clockify.me/assets/images/clockify-logo.svg" alt="logo">
+        </div>
+        <div class="productNavigationSpacer">
+
+        </div>
+        <div>
+            <span>Workspace</span>
+            <i class="fas fa-caret-down"></i>
+        </div>
+        <div>
+           <a href="up_grade.html"><button class="btn">upgrade</button></a>
+        </div>
+        <div>
+            <img src="https://clockify.me/assets/nav-icons/help.svg">
+        </div>
+        <div>
+            <img src="https://clockify.me/assets/nav-icons/notification.svg">
+        </div>
+        <div>
+            <!-- <img src="" alt="dp"> -->
+            <i class="fas fa-user"></i>
+        </div>
+        <!-- onclick="parent.location='index.jsp#home'">home</a> -->
+     </div>
+    <div class="productContainer">
+        <div id="productContainerSidebar" class="productContainerSidebar">
+            <div  onclick="parent.location='time_sheet.html'" title="Timesheet">
+                <img src="https://clockify.me/assets/nav-icons/timesheet.svg" alt="icon">
+                <span>Timesheet</span>
+            </div>  
+            <div onclick= "parent.location='time_tracker.html'" title="Time Tracker">
+                <img src="https://clockify.me/assets/nav-icons/time-tracker.svg" alt="icon">
+                <span>Timetracker</span>
+            </div>
+            <div  id="productAnalyze">
+                <p>Analyze</p>
+            </div>
+            <div onclick= "parent.location='dash_board.html'" title="Dashboard">
+                <img src="https://clockify.me/assets/nav-icons/dashboard.svg" alt="icon">
+                <span>Dashboard</span>
+            </div>
+            <div id="productManage">
+                <p>Manage</p>
+            </div>
+            <div onclick= "parent.location='teams.html'" title="Team">
+                <img src="https://clockify.me/assets/nav-icons/teams.svg" alt="icon">
+                <span>Team</span>
+            </div>
+            <div onclick= "parent.location='client.html'" title="Clients">
+                <img src="https://clockify.me/assets/nav-icons/clients.svg" alt="icon">
+                <span>Clients</span>
+            </div>
+            <div onclick= "parent.location='tags.html'" title="Tags">
+                <img src="https://clockify.me/assets/nav-icons/tags.svg" alt="icon">
+                <span>Tags</span>
+            </div>
+            <div onclick= "parent.location='settings.html'" title="Settings">
+                <img src="https://clockify.me/assets/nav-icons/settings.svg" alt="icon">
+                <span>Settings</span>
+            </div>
+        </div>
+        <!-- ----------------------------------------------------------------------------------------------------- -->
+        <div id="productContainerContent" class="productContainerContent">
+
+
+
+            <div class="mainBody">
+                <div class="mainBodyHeading"><p>Workspace settings</p></div>
+                <div class="mainBodyOptions">
+                    <ul>
+                        <li> <a href="settings.html" style="text-decoration: none;"><button style="background-color: white; border-bottom: 0;" id="settingsBtn">SETTINGS</button></a></li>
+                        <li><button id="alertBtn">ALERTS</button></li>
+                        <li><button id="accountBtn">ACCOUNTS</button></li>
+                        <li><button class="optionsAuth" id="authBtn">AUTHENTICATION</button></li>
+                        <li><button class="optionsCustom" id="customBtn">CUSTOM FIELDS</button></li>
+                        <li><button id="importBtn">IMPORT</button></li>
+                    </ul>
+                </div>
+                <div class="mainBodySettings" id="mainBodySettings">
+                    <div class="settingsInnerBody">
+                        <div class="innerBodyHeadAndDesc">
+                            <p class="innerBodyHeading">Company logo</p>
+                            <p class="innerBodyDesc">Company logo will appear in shared reports and branded PDF exports. Formats: png, jpg, gif. Max size: 1 MB.</p>
+                        </div>
+                        <div class="innerBodyProfilePic"><img id="output" width="200"></div>
+                        <div class="innerBodyUpload">
+                            <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+                            <div style=" background-color: #03A9F4; font-size: 14px; width:120px; height:30px; color:white; font-size: 16px; text-align: center; padding-top: 10px; border-radius: 2px;"><label for="file" style="cursor: pointer;">Upload Image</label></div>
+
+                        </div>
+
+                        <hr class="innerBodyFirstHR">
+
+                        <div class="innerBodyWorkspace">
+                            <p class="innerBodyHeading">Workspace name</p>
+                            <input type="text">
+                        </div>
+
+                        <hr>
+
+                        <div class="innerBodyWorkspaceBill">
+                            <p class="innerBodyHeading">Workspace billable rate</p>
+                            <p class="innerBodyDesc">Default value of each billable hour when there’s no user or project hourly rate.</p>
+                            <div class="workspaceBillInput">
+                                <input type="text" disabled>
+                                <div>Change</div>
+                            </div>
+                            <p class="innerBodyHeading">Currency</p>
+                            <p class="innerBodyDesc">The currency in which the billable and cost amounts will be displayed in reports.</p>
+                            <input type="text" value="USD">
+                        </div>
+
+                        <hr>
+
+                        <div class="innerBodyNewProjects">
+                            <p class="innerBodyHeading">New projects are by default</p>
+                            <p class="innerBodyDesc">When you create a project, make it public so it's available to all users, and billable so its time entries are set as billable.</p>
+                            <div class="newProjectsRadio"><input type="radio"><label> Non-billable</label> <input type="radio" checked="checked"><label> Billable</label></div>
+                            <hr>
+                            <div class="newProjectsRadio"><input type="radio"  checked="checked"><label> Public</label> <input type="radio"><label> Private</label></div>
+                        </div>
+
+                        <hr>
+
+                        <div class="innerBodyWhoCanSee">
+                            <p class="innerBodyHeading">Who can see billable rates and amounts</p>
+                            <p class="innerBodyDesc">Hide billable rates and amounts from regular users so only admins can see them.</p>
+                            <div class="newProjectsRadio"><input type="radio"  checked="checked"><label> Admins</label> <input type="radio"><label> Everyone</label></div>
+                        </div>
+
+                        <hr>
+
+                        <div class="innerBodyGroupProjects">
+                            <p class="innerBodyHeading">Group projects by</p>
+                            <p class="innerBodyDesc">If you don’t have clients or departments, you can change the label to something else.</p>
+                            <select name="options" class="groupProjectsOptions">
+                                <option value="client">Client</option>
+                                <option value="department">Departments</option>
+                                <option value="ategory">Category</option>
+                                <option value="Custom...">Custom</option>
+                              </select>
+                        </div>
+
+                        <hr>
+
+                        <div class="innerBodyDuration">
+                            <p class="innerBodyHeading">Duration format</p>
+                            <p class="innerBodyDesc">Display time in clock format (with or without seconds).</p>
+                            <select name="options" class="groupProjectsOptions">
+                                <option value="client">Full (hh:mm:ss)</option>
+                                <option value="department">Comapct (h:mm)</option>
+                              </select>
+                        </div>
+
+                        <hr>
+
+                        <div class="innerBodyWhoCanCreateProjects">
+                            <p class="innerBodyHeading">Who can create projects and clients</p>
+                            <p class="innerBodyDesc">Control how much freedom your team has when categorizing their tracked time.</p>
+                            <div class="newProjectsRadio"><input type="radio"  checked="checked"><label> Admins</label> <input type="radio"><label> Everyone</label></div>
+                        </div>
+
+                        <hr>
+
+                        <div class="innerBodyWhoCanCreateTags">
+                            <p class="innerBodyHeading">Who can create tags</p>
+                            <p class="innerBodyDesc">Let people organize their time with their own tags, or limit their choice to the preset list.</p>
+                            <div class="newProjectsRadio"><input type="radio"><label> Admins</label> <input type="radio" checked="checked"><label> Everyone</label></div>
+                        </div>
+
+                        <hr>
+
+                        <div class="innerBodyWhoCanCreateTasks">
+                            <p class="innerBodyHeading">Who can create tasks</p>
+                            <p class="innerBodyDesc">Allow everyone to create and update tasks on their projects, so time is better categorized.</p>
+                            <div class="newProjectsRadio"><input type="radio"><label> Admins</label> <input type="radio" checked="checked"><label> Everyone</label></div>
+                        </div>
+
+                        <hr>
+
+                        <div class="innerBodyProjectFavourite">
+                            <p class="innerBodyHeading">Project favorites</p>
+                            <p class="innerBodyDesc">Let people mark their most used projects as favorite so they appear at the top of their project list when tracking time.</p>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                            <label class="activate">Activate project favorites</label>
+                        </div>
+
+                        <hr>
+
+                        <div>
+                            <p class="innerBodyHeading">Task filter</p>
+                            <p class="innerBodyDesc">Quickly find the right task in project picker by using the task@project syntax.</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <label class="activate">Activate task filter</label>
+                        </div>
+
+                        <hr>
+
+                        <div class="innerBodyUpgrade">
+                            <p>PLUS features<button>Upgrade</button></p>
+                        </div>
+
+                        <fieldset disabled>
+                            <p class="innerBodyHeading">Time rounding</p>
+                            <p class="innerBodyDesc">Round time in reports up, down, or to nearest X minutes.</p> 
+                            <p class="innerBodyDesc" style="color: #03a9f4;">Round to nearest, 15 minutes</p>
+
+                            <hr>
+
+                            <p class="innerBodyHeading">Regular users can see</p>
+                            <p class="innerBodyDesc">Prevent regular users from seeing other people’s time entries.</p>
+                            <div class="newProjectsRadio"><input type="radio"  checked="checked"><label> All tracked time</label> <input type="radio"><label> Only time on public projects</label> <input type="radio"><label> Only their own time</label></div>
+
+                            <hr>
+
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <label class="activate">Users can access Team Dashboard</label>
+
+                            <hr>
+
+                            <p class="innerBodyHeading">Do not allow saving time without</p>
+                            <p class="innerBodyDesc">Entries with missing required fields won’t be saved. </p>
+                            <div class="newProjectsRadio"><input type="checkbox"  checked="checked"><label> Project</label> <input type="checkbox"><label> Task</label><input type="checkbox"><label> Tag</label> <input type="checkbox"><label> Description</label></div>
+
+                            <hr>
+
+                            <p class="innerBodyHeading">Lock Entries</p>
+                            <p class="innerBodyDesc"> Prevent regular users from editing their past time or adding new entries to past dates. </p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <label class="activate">Lock Entries</label>
+
+                            <hr>
+                        </fieldset>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src = "settings.js"></script>
+    <script src="navi_gation.js"></script>
+</body>
+</html>

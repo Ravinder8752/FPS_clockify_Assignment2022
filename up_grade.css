@@ -1,0 +1,390 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+.productContainerContent{
+    background-color: #F2F6F8;  
+
+}
+
+.mainBody {
+    height: 100%;
+    width: 85%;
+    margin-top: 6%;
+    margin-left: 6%;
+    /* border: 1px solid black; */
+
+}
+
+.mainBodyFreeVersion {
+    width: 95%;
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: #CDEEFD;
+    color: #02587f;
+    border: 1px solid #B7E5FA;
+    font-size: 14px;
+    border-radius: 2px;
+}
+
+.mainBodyRightBtns {
+    float: right;
+    margin-right: 3.8%;
+    margin-top: 2%;
+    font-size: 14px;
+
+}
+
+.mainBodyRightBtns button {
+    height: 40px;
+    margin-right: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn1 {
+    width: 120px; 
+    border: 1px solid #03A9F4;
+    background-color: white; 
+    color: #03A9F4;
+    transition: 0.3s;
+}
+
+.btn1:hover {
+    background-color: #03A9F4;
+    color: white;
+}
+
+.btn2 {
+    background-color: #03A9F4; 
+    color: white; 
+    border: none;
+    width: 200px;
+}
+
+.btn2:hover {
+    background-color: #038FCE;
+    transition: 0.3s;
+}
+
+.mainBodyHeading {
+    text-align: center;
+    margin: auto;
+}
+
+.headingTitle {
+    color: #333333;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.headingDesc {
+    font-size: 18px;
+    color: #666666;
+    margin-top: -20px;
+}
+
+.mainBodyMonthlyBilling {
+    display: flex;
+    margin-top: 4%;
+    margin:auto;
+    /* margin-left: 28%; */
+    font-size: 14px;
+    color: #212529;
+    width: 420px;
+    height: 35px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.monthlyBillingBtn1 {
+    background-color: #E4EAEE;
+    padding: 10px 10px;
+    width: 200px;
+    border: 1px solid #C6D2D9;
+}
+
+.monthlyBillingBtn2 {
+    padding: 10px 10px;
+    width: 200px;
+    text-align: left;
+    cursor: pointer;
+    border: 1px solid #C6D2D9;
+}
+
+.monthlyBillingBtn2:hover {
+    background-color: #E4EAEE;
+}
+
+.monthlyBillingBtn2 span {
+    font-size: 10px;
+    background-color: #4CAF50;
+    color: white;
+    height: 20px;
+    width: 100px;
+    margin-left: 4px;
+    padding: 2px 3px;
+}
+
+.mainBodyCards {
+    display: flex;
+    height: 800px;
+    width: 95%;
+    margin: 5% auto 0;
+    /* border: 1px solid black; */
+}
+
+.cardsC1, .cardsC2, .cardsC3 {
+    height: 800px;
+    width: 29.5%;
+    background-color: white;
+    padding-left: 20px;
+}
+
+.cardsC1, .cardsC2 {
+    margin-right: 30px;
+}
+
+.cardsC1 {
+    border: 1px solid #3f51b5;
+}
+
+.cardsC2 {
+    border: 1px solid #E91E63;
+}
+
+.cardsC3 {
+    border: 1px solid #9C27B0;
+}
+
+.c1Title, .c2Title, .c3Title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #3f51b5;
+}
+
+.c2Title {
+    color: #e91e63;
+}
+
+.c3Title {
+    color: #9C27B0;
+}
+
+.c1Price {
+    margin-top: 2px;
+    font-size: 32px;
+}
+
+.c1Price sup, span {
+    font-size: 14px;
+}
+
+.c1Price sub {
+    font-size: 12px;
+}
+
+.c1Desc {
+    font-size: 14px;
+    color: #999999;
+    line-height: 25px;
+}
+
+.c1List, .c2List, .c3List {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #333333;
+}
+
+.c1List span, .c2List span, .c3List span{
+    color: #3F51B5;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.c2List span {
+    color: #e91e63;
+}
+
+.c3List span {
+    color: #9c27b0;
+}
+
+hr {
+    /* width: 370px; */
+    margin-left: -20px;
+    margin-top: 300px;
+}
+
+
+
+.c1Btn, .c2Btn, .c3Btn {
+    height: 40px;
+    width: 90%;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: #3f51b5;
+    color: white;
+    transition: 0.3s;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.c2Btn {
+    background-color: #e91e63;
+}
+
+.c3Btn {
+    background-color: #9c27b0;
+}
+
+.c1Btn:hover {
+    background-color: #354499;
+}
+
+.c2Btn:hover {
+    background-color: #CD1453;
+}
+
+.c3Btn:hover {
+    background-color: #802091;
+}
+
+.cardsC3 hr {
+    margin-top: 135px;
+}
+
+.cardsC2Star {
+    float: right;
+}
+
+.cardsC2Star span{
+    font-size: 40px;
+    color: #CD1453;
+    float: right;
+    margin-right: 10px;
+}
+
+.mainBodyCompanies {
+    margin-left: 38%;
+    margin-top: 70px;
+    font-size: 14px;
+    color: #999999;
+}
+
+.mainBodyComapniesLogo {
+    display: flex;
+    width: 90%;
+    margin: 20px auto 0;
+    /* border: 1px solid black; */
+}
+
+.mainBodyComapniesLogo img {
+     margin: auto;
+}
+
+.mainBodyFaq {
+   text-align: center;
+    margin: 50px auto 0;
+    font-size: 24px;
+    color: #666666;
+}
+
+.mainBodyQuestions {
+    margin-top: 50px;
+    width: 100%;
+
+  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.questionsBox {
+    width: 40%;
+    /* border: 1px solid red; */
+    margin:0 auto 40px;
+}
+
+.question {
+    font-size: 18px;
+    color: #333333;
+    font-weight: 500;
+}
+
+.answer {
+    font-size: 14px;
+    color: #333333;
+    line-height: 24px;
+}
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, 700px and down) */
+@media only screen and (max-width: 700px) {
+    .mainBodyRightBtns {
+        margin-right: 10%;
+    }
+
+    .mainBodyMonthlyBilling {
+        margin-left: -4%;
+    }
+
+    .mainBodyCards { 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardsC1, .cardsC2, .cardsC3 {
+        width: 90%;
+        height: 700px;
+        margin-bottom: 30px;
+    }
+
+    hr {
+        margin-top: 5%;
+    }
+
+    .cardsC2 hr {
+        margin-top: 10px;
+    }
+
+    .cardsC3 {
+        height: 800px;
+    }
+    .c1Btn, .c2Btn, .c3Btn {
+        margin-bottom: 20px;
+    }
+
+    .mainBodyCompanies {
+        margin-top: 290%;
+        margin-left: 70px;
+    }
+
+    .mainBodyFaq {
+        width: 300px;
+        margin-left: 10%;
+    }
+
+    .questionsBox {
+        width: 95%;
+    }
+
+    .mainBodyComapniesLogo {
+        display: flex;
+        flex-direction: column;
+    }
+    .mainBodyComapniesLogo img {
+        margin-bottom: 40px;
+    }
+}

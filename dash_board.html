@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clockify - 100% Free Time Tracking Software</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://clockify.me/assets/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/249783f98b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dash_board.css">
+    <link rel="stylesheet" href="navi_gation.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+</head>
+<body>
+    <div class="productNavigation">
+        <div>
+            <i onclick="sidebarFeature()" class="fas fa-bars"></i>
+        </div>
+        <div>
+            <img src="https://clockify.me/assets/images/clockify-logo.svg" alt="logo">
+        </div>
+        <div class="productNavigationSpacer">
+            
+
+        </div>
+        <div>
+            <span>Workspace</span>
+            <i class="fas fa-caret-down"></i>
+        </div>
+        <div>
+           <a href="up_grade.html"><button class="btn">upgrade</button></a>
+        </div>
+        <div>
+            <img src="https://clockify.me/assets/nav-icons/help.svg">
+        </div>
+        <div>
+            <img src="https://clockify.me/assets/nav-icons/notification.svg">
+        </div>
+        <div>
+            <!-- <img src="" alt="dp"> -->
+            <i class="fas fa-user"></i>
+        </div>
+        <!-- onclick="parent.location='index.jsp#home'">home</a> -->
+     </div>
+    <div class="productContainer">
+        <div id="productContainerSidebar" class="productContainerSidebar">
+            <div  onclick="parent.location='time_sheet.html'" title="Timesheet">
+                <img src="https://clockify.me/assets/nav-icons/timesheet.svg" alt="icon">
+                <span>Timesheet</span>
+            </div>  
+            <div onclick= "parent.location='time_tracker.html'" title="Time Tracker">
+                <img src="https://clockify.me/assets/nav-icons/time-tracker.svg" alt="icon">
+                <span>Timetracker</span>
+            </div>
+            <div  id="productAnalyze">
+                <p>Analyze</p>
+            </div>
+            <div onclick= "parent.location='dash_board.html'" title="Dashboard">
+                <img src="https://clockify.me/assets/nav-icons/dashboard.svg" alt="icon">
+                <span>Dashboard</span>
+            </div>
+            <div id="productManage">
+                <p>Manage</p>
+            </div>
+            <div onclick= "parent.location='teams.html'" title="Team">
+                <img src="https://clockify.me/assets/nav-icons/teams.svg" alt="icon">
+                <span>Team</span>
+            </div>
+            <div onclick= "parent.location='client.html'" title="Clients">
+                <img src="https://clockify.me/assets/nav-icons/clients.svg" alt="icon">
+                <span>Clients</span>
+            </div>
+            <div onclick= "parent.location='tags.html'" title="Tags">
+                <img src="https://clockify.me/assets/nav-icons/tags.svg" alt="icon">
+                <span>Tags</span>
+            </div>
+            <div onclick= "parent.location='settings.html'" title="Settings">
+                <img src="https://clockify.me/assets/nav-icons/settings.svg" alt="icon">
+                <span>Settings</span>
+            </div>
+        </div>
+        <div id="productContainerContent" class="productContainerContent">
+             <div class="dashboard">
+                <div class="dashboardHeader">
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="dashboardFilter">
+                    <div>
+                        <button id="showAllData">Show All</button>
+                    </div>
+                    <div>
+                        <input type="text" id="projectListInput" list="projectList" placeholder="Select the project" />
+                        <datalist id="projectList">
+                            <option></option>
+                        </datalist>  
+                    </div>
+                  
+                    <div>
+                        <button id="goFilter">Go</button>
+                    </div>
+                </div>
+                <div class="dashboardContainer">
+                    <div class="dashboardContainerGraph" id="dashboardContainerGraph">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <div class="dashboardContainerStats">
+                        <div id="dashboardStatsUnique" class="dashboardStatsUnique">
+                            <div>   
+                                <span>Total Time</span>
+                                <h2 id="dashboardStatsTotalTime"></h2>
+                            </div>
+                           <div>
+                                <span>Average Time</span>
+                                <h2 id="dashboardStatsAverageTime"></h2>
+                           </div>
+                        </div>
+                        <div class="dashboardStatsDetails" id="dashboardStatsDetails">
+
+                        </div>
+                    </div>
+                </div>
+
+             </div>
+        </div>
+    </div>
+
+ </div>
+
+
+
+
+
+
+     <script src="dash_board.js"></script>
+     <script src="navi_gation.js"></script>
+</body>
+</html>

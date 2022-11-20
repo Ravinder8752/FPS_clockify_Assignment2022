@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Sign Up
+    </title>
+    <link rel="stylesheet" href="Sign_Up.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="SignUp">
+    <div class="SignUpContianer">
+        <!-- Navbar -->
+        <div class="SignUpNavbar">
+            <a href="home.html"><img src="https://clockify.me/assets/images/clockify-logo.svg" alt="logo"></a>
+            <a href="log-in.html" class="SignUpLogin">Log In</a>
+        </div>
+        <!-- Get Sarted -->
+        <div class="SignUpGetStarted">
+            <p class="SignUpGetStartedGet"> Get started with Clockify</p>
+            <p class="SignUpGetStartedCreate"> Create a free account to start tracking time and supercharge your
+                productivity</p>
+            <p class="SIgnUpGetStartedCredit"> No credit card required · Unsubscribe at any time</p>
+        </div>
+        <!--Sign Up Form -->
+        <div class="SignUpForm">
+            <label class="SignUpFormSignUp"> Sign Up</label>
+            <input type="text" name="email" id="email" placeholder="Enter email" required />
+            <input type="password" name="password" id="password" placeholder="Choose password" required />
+            <!-- terms check box -->
+            <label class="SignUpTerms">
+                <input type="Checkbox" class="SignUpCheckbox" id="SignUpCheckbox" required checked>
+                I agree to the
+                <span class="SignUpCheckmark"></span>
+                <a href="#">Terms of Use</a>
+            </label>
+            <!-- create button -->
+            <a href="time_sheet.html"><button  class="SignUPCreateButton" id="signup"> CREATE FREE ACCOUNT </button></a>
+            <h4 class="SignUpError SignUpErrorMsg" id="SignUpError"> You must accept the terms of service </h4>
+           
+            <div class="underline">
+                <div></div>
+                <p>OR</p>
+                <div></div>
+
+            </div>
+
+            <!-- google button -->
+            <div class="SignUpGoogleButton">
+                <a href="#" class="SignUpGoogle">
+                    <img src="https://clockify.me/assets/ui-icons/icon-google.svg" alt="Google">
+                    <span class="SignUpGoogleContinue">Continue with Google </span> </a>
+            </div>
+
+        </div>
+        <!-- privacy -->
+        <div class="SignUpPrivacy">
+            <img src="https://clockify.me/assets/ui-icons/safe.png" alt="Privacy" class="SignUpPrivacyImg">
+            <span class="SignUpPrivacySpan"> your data is safe with us : </span>
+            <a href=""> Security Privacy</a>
+        </div>
+    </div>
+</div>
+</body>
+<script src="Sign_Up.js"></script>
+
+</html>

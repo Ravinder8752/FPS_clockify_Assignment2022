@@ -1,0 +1,136 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0; 
+}
+.productContainerContent{
+    background-color: #F2F6F8;  
+}
+
+.mainBody {
+    height: 100%;
+    width: 80%;
+    margin-top: 7%;
+    margin-left: 10%;
+    /* border: 1px solid black; */
+}
+
+.innerBodyUpgrade {
+    width: 93%;
+    height: 40px;
+    background-color: #CDEEFD;
+    border: 1px solid #B8E7FC;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #02587f;
+    padding-left: 20px;
+    padding-bottom: 10px;
+
+}
+
+.innerBodyUpgrade button {
+    margin-left: 20px;
+    font-size: 14px;
+    background-color: #03a9f4;
+    border: 1px solid #03a9f4;
+    color: white;
+    padding: 4px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.innerBodyUpgrade button:hover {
+    background-color: #038FCE;
+}
+
+.mainBodyHeading {
+    /* border: 1px solid black; */
+    margin-top: 5%;
+    width: fit-content;
+    height: 60px;
+}
+
+.mainBodyHeading p {
+    font-size: 24px;
+    color: #666666;
+    font-weight: 400px;
+}
+
+fieldset {
+    opacity: 0.6;
+    cursor: default;
+    border: none;
+}
+
+.groupProjectsOptions {
+    height: 36px;
+    width: 120px;
+    border: 1px solid #C6D2D9;
+    font-size: 14px;
+    color: #313437;
+    padding: 5px 10px;
+    margin-left: -1.4%;
+}
+
+.innerBodyGroupProjects  input {
+    height: 34px;
+    border: 1px solid #C6D2D9;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #333333;
+    margin-left: 1%;
+    font-size: 14px;
+}
+
+.clientsInput {
+    margin-top: 2%;
+    margin-left: -1.4%;
+
+}
+
+.clientsInput input {
+    height: 35px;
+    padding-left: 10px;
+    width: 94.8%;
+    background-color: #E4EAEE;
+    border: 1px solid #C6D2D9;
+}
+
+.innerBodyGroupProjects > div {
+    display: flex;
+}
+
+.addNewBtn {
+    width: 120px;
+    margin-left: 10px;
+    background-color: #03A9F4;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+.searchName {
+    margin-right: 26%;
+}
+
+
+ /* Extra small devices (phones, 700px and down)  */
+@media only screen and (max-width: 700px) {
+    .groupProjectsOptions {
+        margin-left: -4%;
+    }
+
+
+    .clientsInput {
+        margin-left: -4%;
+        margin-top: 5%;
+    }
+
+    .clientsInput input {
+        width: 60%;
+    }
+
+}
